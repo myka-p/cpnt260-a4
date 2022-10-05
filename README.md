@@ -7,3 +7,4 @@ GH pages:
 
 ## Attributions
 
+- Photo: Pexels (https://www.pexels.com/photo/photo-of-aurora-during-evening-1938348/)
