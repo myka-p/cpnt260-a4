@@ -1,0 +1,61 @@
+/* arrange the contents as flexboxes, and set to 100% of viewport */
+body
+{
+  display: flex;
+  flex-direction: column; 
+  min-height: 100vh; 
+  margin: 0;
+
+  font-family: 'Philosopher', 'Rufina', 'Spectral',Trebuche MS, serif;
+  font-size: 36px;
+}
+
+/* flex allow the header to moved around (left to right) */
+header {
+  display: flex;
+  font-size: 50px;
+}
+
+/* gives space around the header and main - TAKE OUT THE MAIN*/
+header, main {
+  padding: 1rem;
+
+  font-family: 'Karla', Arial, Helvetica, sans-serif; 
+}
+
+/* default link style - unvisited */
+a {
+  text-decoration: none;
+  color: dimgray;
+}
+
+/* link changes color when mouse hovers - MODIFY THIS FOR THE BUTTON*/
+a:hover {
+  color: darkslategray;
+}
+
+/* background color and picture styles - MODIFY THIS FOR THE HERO*/
+main {
+  flex: auto;
+
+  color: white;
+  text-align: center;
+  
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top; 
+}
+
+/* text style */
+p {
+  font-size: 20px;
+}
+
+/* Sticky container - sets orientation to center and surrounding space */
+footer {
+  margin: 2rem;
+
+  font-size: 13px;
+  text-align: center;
+}
