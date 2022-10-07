@@ -12,8 +12,9 @@ body
 
 /* flex allow the header to moved around (left to right) */
 header {
-  display: flex;
-  font-size: 50px;
+  display: block;
+  /* font-size: 50px; */
+  font-family: 'Karla', Arial, Helvetica, sans-serif; 
 }
 
 /* gives space around the header and main - TAKE OUT THE MAIN*/
@@ -22,6 +23,7 @@ header {
 
   font-family: 'Karla', Arial, Helvetica, sans-serif; 
 } */
+
 
 /* default link style - unvisited */
 /* a {
@@ -50,23 +52,24 @@ header {
   display: flex;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/aurora-hero.jpeg);
   
-  height: 50;
+  height: 70vh;
 
-  /* background-color: black; */
+  background-color: black;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  /* background-blend-mode: luminosity; */
   position: relative;
 }
 
-/* .hero-contents {
+.hero-contents {
   text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-} */
+}
 
 /* text style */
 p {
