@@ -5,6 +5,7 @@ GH pages: https://myka-p.github.io/cpnt260-a4/
 
 ## Above and Beyond
 - Hosted images locally by creating an `images` directory.
+- linear-gradient used in `line 44` on `style.css`
 
 ## Attributions
 
