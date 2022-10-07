@@ -7,7 +7,7 @@ body
   min-width: 35ch;
   margin: 0;
 
-  font-family: 'Philosopher', 'Rufina', 'Spectral',Trebuche MS, serif;
+  font-family: 'Philosopher', 'Rufina', 'Spectral',"Trebuche MS", serif;
   font-size: 36px;
 
   /* no horizontal scroll */
@@ -27,15 +27,15 @@ h1 {
 }
 
 /* default link style - unvisited */
-/* a {
+a {
   text-decoration: none;
-  color: dimgray;
-} */
+  color: lightskyblue;
+}
 
 /* link changes color when mouse hovers - MODIFY THIS FOR THE BUTTON*/
-/* a:hover {
-  color: darkslategray;
-} */
+a:hover {
+  color: rgb(68, 213, 32);
+}
 
 /* background color and picture styles - MODIFY THIS FOR THE HERO*/
 .hero {
@@ -67,9 +67,10 @@ h1 {
 p {
   /* This gives spaces around the paragraph from the hero image. */
   margin-bottom: 5em;
-  margin-left: 5em;
-  margin-right: 5em;
-  max-height: 20%;
+  margin-left: 15em;
+  margin-right: 15em;
+  max-height: 50%;
+  min-width: 35ch;
   font-size: 20px;
 
   color: white;
