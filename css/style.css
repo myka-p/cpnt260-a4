@@ -8,22 +8,22 @@ body
 
   font-family: 'Philosopher', 'Rufina', 'Spectral',Trebuche MS, serif;
   font-size: 36px;
+
+  /* no horizontal scroll */
+  overflow-y: hidden; 
 }
 
 /* flex allow the header to moved around (left to right) */
 header {
-  display: block;
-  /* font-size: 50px; */
-  font-family: 'Karla', Arial, Helvetica, sans-serif; 
+  display: flex;
+  flex-direction: column;
 }
 
-/* gives space around the header and main - TAKE OUT THE MAIN*/
-/* header, main {
-  padding: 1rem;
-
+h1 {
+  margin: 0;
   font-family: 'Karla', Arial, Helvetica, sans-serif; 
-} */
-
+  font-size: 75px;
+}
 
 /* default link style - unvisited */
 /* a {
@@ -37,39 +37,42 @@ header {
 } */
 
 /* background color and picture styles - MODIFY THIS FOR THE HERO*/
-/* main {
-  flex: auto;
-
-  color: white;
-  text-align: center;
-  
-  background-color: black;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top; 
-} */
 .hero {
   display: flex;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/aurora-hero.jpeg);
   
-  height: 70vh;
+  height: 80vh;
 
-  background-color: black;
+  
+  /* background-color: black; */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  /* background-blend-mode: luminosity; */
-  position: relative;
-}
 
-.hero-contents {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+
+  /* contents style */
+  min-width: 35ch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-size: clamp(1rem, 2.5vw, 2rem); 
   color: white;
 }
+
+/* .hero-contents {
+  min-height: fit-content;
+  min-width: 35ch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-size: clamp(1rem, 2.5vw, 2rem); 
+  color: white;
+}
+   */
 
 /* text style */
 p {
